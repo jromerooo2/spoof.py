@@ -46,7 +46,7 @@ def main():
         time.sleep(1)
         logo()
         time.sleep(1)
-        smsnumb = input("Input the number of the target: ")
+        smsnumb = input("Input the target number: ")
         message = input("Please input the message: ")
         url = "https://textbel.com/text"
         resp = requests.post(url, {
