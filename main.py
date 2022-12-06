@@ -1,13 +1,12 @@
 import os
 import time
-from termcolor import colored
 import requests
 import sys
 
 
 def main():
     def logo():
-        print(colored(
+        print(
             """
     @@@@@@@@@@@@@@@@@@@@@@@@@@**********@@@@@@@@@@@@@@@@@@@@@@@@@@
     @@@@@@@@@@@@@@@@@*****************************@@@@@@@@@@@@@@@@
@@ -30,7 +29,7 @@ def main():
     
     Created by Juan Romero
     dont use this for illegal purposes lmao 
-    """, 'blue'))
+    """)
 
     logo()
 
@@ -48,7 +47,7 @@ def main():
         time.sleep(1)
         smsnumb = input("Input the target number: ")
         message = input("Please input the message: ")
-        url = "https://textbel.com/text"
+        url = "https://textbelt.com/text"
         resp = requests.post(url, {
             'phone': f'{smsnumb}',
             'message': f'{message}',
